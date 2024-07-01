@@ -1,15 +1,12 @@
-import Header from "../components/Header.jsx";
 import Banner from "../components/Banner.jsx";
-import Location from "../components/Location.jsx";
-import Footer from "../components/Footer.jsx";
+import CardList from "../components/CardList.jsx";
 
 function Acceuil() {
     return (
         <div>
             <Banner />
-            <Location />
+            <CardList />
         </div>
-
     )
 }
 

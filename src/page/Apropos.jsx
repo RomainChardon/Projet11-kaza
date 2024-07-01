@@ -1,9 +1,7 @@
-import Header from "../components/Header.jsx";
-
 function Apropos() {
-    return (
-        <Header />
-    )
+    // TODO : Other banner
+    // TODO : Collapse json
+    return
 }
 
 export default Apropos

@@ -32,13 +32,15 @@
 
 .banner {
   display: flex;
-  background: #1a1a1a;
   width: 100%;
   height: 8rem;
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-position: center;
 
   h2 {
     color: #ffffff;
@@ -49,13 +51,112 @@
   background: #F6F6F6;
   border-radius: 1rem;
   padding: 20px;
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    h2 {
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }
+
+}
+
+#carousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 430px;
+  width: 100%;
+
+  div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  div:first-child {
+    left: 5px;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  div:last-child {
+    right: 5px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .compteur {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags-container {
+  display: flex;
+  gap: 20px;
+}
+
+.tags-location {
+  background: #ff6060;
+  color: #ffffff;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+.host-container {
+  display: flex;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #000;
   color: #fff;
   height: 8rem;
