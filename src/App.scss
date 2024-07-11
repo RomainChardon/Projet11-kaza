@@ -134,6 +134,17 @@
 .detail-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    color: #ff6060;
+  }
 }
 
 .tags-container {
@@ -150,6 +161,60 @@
 
 .host-container {
   display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+
+  img {
+    border-radius: 50%;
+    width: 80px;
+  }
+}
+
+.host-name {
+  color: #ff6060;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  .collapse {
+    flex: 1;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6060;
+    color: #ffffff;
+    padding: 5px 30px;
+    border-radius: 6px;
+
+    img {
+      width: 10px;
+      transform: rotate(-90deg);
+    }
+
+    .fleche-rotate {
+      transform: rotate(90deg);
+    }
+  }
+
+  .collapse-element {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    background: #fbfbfb;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+  }
 }
 
 .footer {

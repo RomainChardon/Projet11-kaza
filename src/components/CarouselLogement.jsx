@@ -2,7 +2,6 @@ import {useState} from "react";
 import logo from '../assets/fleche.png'
 
 function CarouselLogement(imgs) {
-
     const [picture, setPicture] = useState(0);
 
     const prevClick = () => {
@@ -21,18 +20,28 @@ function CarouselLogement(imgs) {
         }
     }
 
-    return (
-        <div id="carousel">
-            <div onClick={prevClick}>
-                <img src={logo} alt="fleche"/>
+    if (imgs.imgs.length > 1) {
+        return (
+            <div id="carousel">
+                <div onClick={prevClick}>
+                    <img src={logo} alt="fleche"/>
+                </div>
+                <img src={imgs.imgs[picture]}/>
+                <span className='compteur'>{picture + 1}/{imgs.imgs.length}</span>
+                <div onClick={nextClick}>
+                    <img src={logo} alt="fleche"/>
+                </div>
             </div>
-            <img src={imgs.imgs[picture]}/>
-            <span className='compteur'>{picture + 1}/{imgs.imgs.length}</span>
-            <div onClick={nextClick}>
-                <img src={logo} alt="fleche"/>
+        )
+    } else {
+        return (
+            <div id="carousel">
+                <img src={imgs.imgs[picture]}/>
             </div>
-        </div>
-    )
+        )
+    }
+
+
 }
 
 export default CarouselLogement;
