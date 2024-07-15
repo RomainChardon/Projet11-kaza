@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import logo from '../assets/kasa_logo_small.png'
 
 function Header() {
+    let isActive = useLocation().pathname;
+
     return (
         <div className='header'>
             <img src={logo} alt="Logo Kasa"/>
             <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
+                <Link to="/" className={ isActive === '/' ? 'active' : '' }>Accueil</Link>
+                <Link to="/about" className={ isActive === '/about' ? 'active' : '' }>A Propos</Link>
             </nav>
         </div>
 

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main {
@@ -27,10 +28,18 @@
       color: #000000;
       text-decoration: none;
     }
+
+    .active, a:hover {
+      text-decoration: underline #000000 !important;
+    }
   }
 }
 
-.banner {
+.about-banner {
+  background-image: url("assets/bg_about.png") !important;
+}
+
+.banner, .about-banner {
   display: flex;
   width: 100%;
   height: 8rem;
@@ -38,12 +47,13 @@
   justify-content: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  background-image: url("assets/bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/bg.png');
   background-size: cover;
   background-position: center;
 
-  h2 {
+  h1 {
     color: #ffffff;
+    filter: brightness(100%);
   }
 }
 
@@ -72,12 +82,12 @@
       border-radius: 1rem;
     }
 
-    h2 {
+    p {
       padding: 15px;
       position: absolute;
       bottom: 0;
       color: #fff;
-      font-size: 1.2rem;
+      text-shadow: 0px 0px 15px #000000;
     }
   }
 
@@ -175,7 +185,12 @@
   color: #ff6060;
 }
 
-.more {
+.about-collapse {
+  flex-direction: column !important;
+  margin: 20px 60px;
+}
+
+.more, .about-collapse {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -228,5 +243,67 @@
 
   img {
     height: 30px;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  min-height: 78vh;
+}
+
+.error-code {
+  color: #ff6060;
+  font-size: 12rem;
+}
+
+.error-text {
+  color: #ff6060;
+  font-size: 1.5rem;
+}
+
+.error-link {
+  color: #000000;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .banner h1 {
+    padding: 0 10px
+  }
+
+  .about-collapse {
+    margin: 20px 0;
+  }
+
+  .error {
+    min-height: 77.3vh;
+  }
+
+  .error-text {
+    font-size: 1rem;
+  }
+
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+  .more {
+    flex-direction: column;
+  }
+
+  .star-group {
+    display: flex;
+    align-items: center;
   }
 }

@@ -10,7 +10,7 @@ function Card({ id, title, cover }) {
     return (
         <div className="card" onClick={handleClick}>
             <img src={cover} alt={title} />
-            <h2>{title}</h2>
+            <p>{title}</p>
         </div>
     )
 }

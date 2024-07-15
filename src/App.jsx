@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import Acceuil from "./page/Acceuil.jsx";
 import Apropos from "./page/Apropos.jsx";
 import NotFound from "./page/NotFound.jsx";

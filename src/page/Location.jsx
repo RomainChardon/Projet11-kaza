@@ -34,14 +34,16 @@ function Location() {
                             ))}
                         </div>
                     </div>
-                    <div>
+                    <div className="host">
                         <Host
                             host={location.host}
                         />
-                        {[...Array(5)].map((star, i) => {
-                            let rate = i + 1;
-                            return (<img key={i} src={rate <= location.rating ? fullStar : emptyStar}/>)
-                        })}
+                        <div className="star-group">
+                            {[...Array(5)].map((star, i) => {
+                                let rate = i + 1;
+                                return (<img key={i} src={rate <= location.rating ? fullStar : emptyStar}/>)
+                            })}
+                        </div>
                     </div>
                 </div>
                 <div className="more">
