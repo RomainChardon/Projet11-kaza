@@ -4,7 +4,7 @@ import {
     BrowserRouter,
 } from "react-router-dom";
 
-import './App.scss'
+import './assets/style/App.scss'
 import App from "./App.jsx";
 
 

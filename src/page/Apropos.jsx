@@ -1,9 +1,7 @@
 import Collapse from "../components/Collapse.jsx";
-import json from "../about.json";
+import json from "../assets/json/about.json";
 
 function Apropos() {
-    // TODO : Other banner
-    // TODO : Collapse json
     return (
         <div>
             <div className="about-banner"></div>

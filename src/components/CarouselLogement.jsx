@@ -1,5 +1,5 @@
 import {useState} from "react";
-import logo from '../assets/fleche.png'
+import logo from '../assets/img/fleche.png'
 
 function CarouselLogement(imgs) {
     const [picture, setPicture] = useState(0);

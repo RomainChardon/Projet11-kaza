@@ -1,4 +1,4 @@
-import json from "../logements.json";
+import json from "../assets/json/logements.json";
 import Card from "./Card.jsx";
 
 function CardList() {

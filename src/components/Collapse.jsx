@@ -1,5 +1,5 @@
 import {useState} from "react";
-import fleche from "../assets/fleche.png";
+import fleche from "../assets/img/fleche.png";
 
 function Collapse({title, element}) {
 

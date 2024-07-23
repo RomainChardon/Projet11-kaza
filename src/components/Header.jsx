@@ -1,5 +1,5 @@
 import {Link, useLocation} from 'react-router-dom'
-import logo from '../assets/kasa_logo_small.png'
+import logo from '../assets/img/kasa_logo_small.png'
 
 function Header() {
     let isActive = useLocation().pathname;

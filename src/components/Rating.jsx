@@ -1,5 +1,5 @@
-import fullStar from '/src/assets/star-active.png'
-import emptyStar from '/src/assets/star-inactive.png'
+import fullStar from '/src/assets/img/star-active.png'
+import emptyStar from '/src/assets/img/star-inactive.png'
 
 function Rating({rating}) {
     return (
